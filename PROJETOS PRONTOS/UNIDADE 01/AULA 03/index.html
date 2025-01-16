@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+    <script>
+        function salvarDados() {
+            var nome        = document.getElementById('nome')
+            var email       = document.getElementById('email')
+            var telefone    = document.getElementById('telefone')
+
+            // console.log(nome.value)
+            // console.log(email.value)
+            // console.log(telefone.value)
+
+
+            var dados = document.getElementsByTagName('input')
+
+            // console.log(dados[0].value)
+            // console.log(dados[1].value)
+            // console.log(dados[2].value)
+
+
+            var dadosClass = document.getElementsByClassName('input')
+            // console.log(dadosClass[0].value)
+            // console.log(dadosClass[1].value)
+            // console.log(dadosClass[2].value)
+
+            var caixaNome = document.querySelector('.input')
+            console.log(caixaNome)
+
+            var caixaDados = document.querySelectorAll('.input')
+            console.log(caixaDados[0].value)
+            console.log(caixaDados[1].value)
+            console.log(caixaDados[2].value)
+
+            var h1 = document.getElementsByTagName('h1')
+            console.log(h1[0].innerText)
+        }
+    </script>
+</head>
+<body>
+    <h1>Aula 03 de Javascript</h1>
+    <h2>Formulário de Cadastro</h2>
+    <form>
+        <label for="">Nome:</label>
+        <input type="text" name="txt-nome" id="nome" class="input">
+        <br>
+        <label for="">Email:</label>
+        <input type="text" name="txt-email" id="email" class="input">
+        <br>
+        <label for="">Telefone:</label>
+        <input type="text" name="txt-telefone" id="telefone" class="input">
+        <br>
+        <input type="button" name="btn-salvar" value="Salvar" onclick="salvarDados()">
+    </form>
+</body>
+</html>
