@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Web Programming</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/cadastroClientes.js" defer></script>
+  
+</head>
+<body>
+    <h1>Exercício - Web Programming</h1>
+
+    <main>
+        <div id="conteudo">
+            <h2 class="titulo">
+                CADASTRO DE CLIENTES
+            </h2>
+            <div id="form">
+                <form name="frm_clientes" method="get" action="">
+                    <label>Nome:</label> 
+                    <input type="text" name="txt_nome" value="" id="nome" class="valor" placeholder="Nome do Cliente"> <br>
+                    
+                    <label>E-mail:</label>
+                    <input type="text" name="txt_email" value="" id="email" class="valor" placeholder="nome@email.com" > <br>
+                    
+                    <input type="button" name="btnSalvar" id="salvar" value="Salvar" class="botao">
+                    <input type="button" name="btnLimpar" id="limpar" value="Limpar" class="botao">
+                </form>
+            </div>
+            
+        </div>
+        <div id="conteudo_tabela">
+            <h2 class="titulo">
+                LISTA DE CLIENTES
+            </h2>
+            <table id="resultado">
+                <tr class="tabela_titulos">
+                    <td id="titulo_nome">Nome</td>
+                    <td id="titulo_email">E-mail</td>
+                </tr>
+                <tr>
+                    <td id="nome1"></td>
+                    <td id="email1"></td>
+                </tr>
+                <tr>
+                    <td id="nome2"></td>
+                    <td id="email2"></td>
+                </tr>
+                <tr>
+                    <td id="nome3"></td>
+                    <td id="email3"></td>
+                </tr>
+                <tr>
+                    <td id="nome4"></td>
+                    <td id="email4"></td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+    <footer>
+        Professor Marcel Neves Teixeira
+    </footer>
+</body>
+</html>
+<!-- https://github.com/marcelnt/curso-ead-unifecaf -->
