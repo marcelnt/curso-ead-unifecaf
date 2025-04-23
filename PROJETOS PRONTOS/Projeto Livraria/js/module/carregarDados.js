@@ -59,7 +59,12 @@ const setDadosLivros = function(listaDeLivros) {
 
 const getLivrosAPI = async function(){
     //Link da url da API de livros
-    let url = 'https://app-livraria-2024-gsc9e3gcdsh2f2b5.brazilsouth-01.azurewebsites.net/v2/livraria/livros'
+    
+    //URL antiga
+    //let url = 'https://app-livraria-2024-gsc9e3gcdsh2f2b5.brazilsouth-01.azurewebsites.net/v2/livraria/livros'
+
+    //URL Nova
+    let url = 'https://projeto-livraria-latx.onrender.com/v2/livraria/livro/1'
 
     //Executa a URL utilizando o fetch
     let response = await fetch(url)
@@ -73,6 +78,6 @@ const getLivrosAPI = async function(){
 
 window.addEventListener('load', function(){
     //getDadosLivros(livros[0].books)
-    setDadosLivros(livros[0])
-    //getLivrosAPI()
+    //setDadosLivros(livros[0])
+    getLivrosAPI()
 })
